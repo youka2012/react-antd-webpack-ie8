@@ -33,4 +33,15 @@
 * 相关plugin如果报错，则尝试较低版本，注意不同版本的配置区别！！
 * 项目中涉及网络请求的地方已替换为模拟数据，网络请求的代码保留已在注释中。
 
+## 相关资源
+
+* react14: https://www.jianshu.com/p/a8bc5b292561  
+* react ie8:https://blog.csdn.net/zjw0742/article/details/52981706
+* webpack 1.x:https://segmentfault.com/a/1190000008908550
+* react-router-dom:https://blog.csdn.net/mapbar_front/article/details/79605346
+* Ant Design 1.x:https://1x.ant.design/docs/react/getting-started
+* echarts:https://www.echartsjs.com/tutorial.html#5%20%E5%88%86%E9%92%9F%E4%B8%8A%E6%89%8B%20ECharts
+* webuploader:http://fex.baidu.com/webuploader/getting-started.html
+* sockjs:https://github.com/sockjs/sockjs-client
+
 ## 欢迎交流分享！！！

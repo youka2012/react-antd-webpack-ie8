@@ -245,7 +245,7 @@ const addPagePlugin = name => {
         new HtmlWebpackPlugin({
             filename: app + ".html",
             template: dir("src/index.html"),
-            title: "华东电网发电企业辅助服务及并网运行管理考核系统",
+            title: "react-antd-webpack-ie8演示",
             chunks: ["runtime", "shim", "baseChunk", "appChunk", app],//
             chunksSortMode: "manual",
             inject: true,

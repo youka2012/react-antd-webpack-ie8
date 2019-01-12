@@ -19,6 +19,7 @@ api接口的反向代理在dev-proxy-config配置
 ## 说明
 
 采用 `react` 和 `Ant Design` 兼容到浏览器 `IE8`
+* 项目初期参考了大神：https://github.com/HeavenSky/react-antd-ie8的分享的项目
 * 采用低版本兼容的 `dependency` 有 `react@0.x` `antd@1.x` `jquery@1.x` compression-webpack-plugin@1.x
 * 具体请见 `package.json`
 * 相关plugin如果报错，则换较低版本再试，注意不同版本的配置区别

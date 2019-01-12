@@ -4,7 +4,7 @@
 * 封装了一些企业前端开发常用组件，且通过脚本异步加载方式集成了webuploader/sockjs/echarts等流行组件
 * 开发环境 node || 构建工具 webpack1
 * 支持开发环境，无刷新热更新，css抽取，代码压缩/混淆，gzip压缩，模块分片异步加载，url图片抽取,css模块化
-* 支持可视化模块打包分析，支持IDE源码断点调试
+* 支持可视化模块打包分析，支持IDE源码断点调试(vscode,webstorm)
 * 推荐IDE： VsCode(免费好用) WebStorm（专业前端，收费 非常好用）
 
 
@@ -45,3 +45,42 @@
 * sockjs:https://github.com/sockjs/sockjs-client
 
 ## 欢迎交流分享！！！
+
+## VS Code调试配置
+先启动项目
+vscode中新建调试，lunch.json如下配置
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:8888",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "skipFiles": [
+                "node_modules/**"
+            ],
+            "sourceMapPathOverrides": {
+                "webpack:///*": "${webRoot}/*"
+            }
+        },
+        {
+            "type":"chrome",
+            "request": "attach",
+            "name":"attach to chrome",
+            "port":9222,
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true
+        }
+    ]
+}
+
+## WebStorm 调试配置
+
+先启动项目
+新建右上角JavaScript Debug
+URL填http://localhost:8888/ （开发环境server地址）
+下方列表中src对应的remote url设置为webpack:///src
+点击调试按钮即可

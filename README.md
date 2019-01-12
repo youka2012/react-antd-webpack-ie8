@@ -1,8 +1,10 @@
 ## 相关技术
-* 技术栈：react react-dom react-router-dom AntDesign axios ie8等
+* 技术栈：react react-dom react-router-dom AntDesign axios es6等
+* 支持ie8
 * 封装了一些企业前端开发常用组件，且通过脚本异步加载方式集成了webuploader/sockjs/echarts等流行组件
 * 开发环境 node || 构建工具 webpack1
-* 支持无刷新热更新，css抽取，gzip压缩，模块分片异步加载，url图片抽取
+* 支持开发环境，无刷新热更新，css抽取，代码压缩/混淆，gzip压缩，模块分片异步加载，url图片抽取
+* 支持可视化模块打包分析，支持IDE源码断点调试
 * 推荐IDE： VsCode(免费好用) WebStorm（专业前端，收费 非常好用）
 
 
@@ -25,7 +27,10 @@
 
 ## 说明
 
-采用 `react` 和 `Ant Design` 兼容到浏览器 `IE8`
+采用 `webpack`,`react` 和 `Ant Design` 等技术，兼容到浏览器 `IE8`
 * 项目初期参考了大神HeavenSky：https://github.com/HeavenSky/react-antd-ie8的分享的项目react-antd-ie8
 * 具体请见 `package.json`
-* 相关plugin如果报错，则换较低版本再试，注意不同版本的配置区别
+* 相关plugin如果报错，则尝试较低版本，注意不同版本的配置区别！！
+* 项目中涉及网络请求的地方已替换为模拟数据，网络请求的代码保留已在注释中。
+
+## 欢迎交流分享！！！

@@ -3,6 +3,7 @@
 * 支持ie8
 * 封装了一些企业前端开发常用组件，且通过脚本异步加载方式集成了webuploader/sockjs/echarts等流行组件
 * 开发环境 node || 构建工具 webpack1
+* 带有node_modules.zip，支持内网开发（右键-解压到当前文件夹）。
 * 支持开发环境，无刷新热更新，css抽取，代码压缩/混淆，gzip压缩，模块分片异步加载，url图片抽取,css模块化
 * 支持可视化模块打包分析，支持IDE源码断点调试(vscode,webstorm)
 * 推荐IDE： VsCode(免费好用) WebStorm（专业前端，收费 非常好用）
